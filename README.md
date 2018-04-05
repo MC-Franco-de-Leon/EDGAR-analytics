@@ -52,3 +52,5 @@ This is a text file containing the information of user's sessions with the follo
 ## Restrictions and possible improvements
 
 * This code is considering that a session can be open for days, but not for months. The algorithm to compute the amount of seconds between the first and last query can be improved by considering moths and years too (I don't know how realistic that might be). Precisely, when doing the count of days for a year, that is a quanitity that may change if we are dealing with a leap year or not. So, we are considering years of 365 days (in order to avoid floating points).
+
+* The code works with a list of open sessions in memory. We can instead save those open sessions in a file and update it through the process.
