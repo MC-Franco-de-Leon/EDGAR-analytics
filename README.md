@@ -13,10 +13,16 @@ with information of users accessing the system to retrieve financial information
 
 The first line of the log.csv file is a header. For the purpose of this challenge we are only interested in the following fields
 
-ip: Which uniquely identifies users
+ip: Which uniquely identifies users --
+
 date: date of the request (yyyy:mm:ss)
+
 time: time of the request (hh:mm:ss)
+
 cik: Security and Exchange Commission's (SEC) Central index key
+
 accession: SEC document accession number
+
 extention: Value that helps determine the document requested
+
 The last three fields uniquely identify the requested documents
