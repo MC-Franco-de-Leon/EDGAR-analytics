@@ -29,7 +29,7 @@ The last three fields uniquely identify the requested documents
 
 ## About inactivity_period.txt
 
-This file contains a single integer value between one and 86400 in the first line to specify the length of time for which a particular session will be consider closed.
+This file contains (in the first line) a single integer value between one and 86400 to specify the length of time for which a particular session will be consider closed.
 
 ## src code and Output file
  
