@@ -43,8 +43,12 @@ sessionization.txt
 
 This is a text file containing the information of user's sessions with the following format
 
-..* IP
-..* date and time of the first webpage requested in the session (yyyy-mm-dd hh:mm:ss)
-..* date and time of the last webpage requested in the session (yyyy-mm-dd hh:mm:ss)
-..* duration of the session in seconds
-..* count of webpage requests during the session
+* IP
+* date and time of the first webpage requested in the session (yyyy-mm-dd hh:mm:ss)
+* date and time of the last webpage requested in the session (yyyy-mm-dd hh:mm:ss)
+* duration of the session in seconds
+* count of webpage requests during the session
+
+## Restrictions and possible improvements
+
+* This code is considering that a session can be open for days, but not for months. The algorithm to compute the amount of seconds between the first and last query can be improved by considering moths and years too (I don't know how realistic that might be). Precisely, when doing the count of days for a year, that is a quanitity that may change if we are dealing with a leap year or not. So, we are considering years of 365 days (in order to avoid floating points).
