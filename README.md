@@ -26,3 +26,25 @@ The first line of the log.csv file is a header. For the purpose of this challeng
 **extention**: Value that helps determine the document requested
 
 The last three fields uniquely identify the requested documents
+
+## About inactivity_period.txt
+
+This file contains a single integer value between one and 86400 in the first line to specify the length of time for which a particular session will be consider closed.
+
+## src code and Output file
+ 
+Following the specifications of the challenge, the main code is in the folder src and is called   
+
+sessionization.py  
+
+The Output file can be found inside the folder output with the name   
+
+sessionization.txt  
+
+This is a text file containing the information of user's sessions with the following format
+
+..* IP
+..* date and time of the first webpage requested in the session (yyyy-mm-dd hh:mm:ss)
+..* date and time of the last webpage requested in the session (yyyy-mm-dd hh:mm:ss)
+..* duration of the session in seconds
+..* count of webpage requests during the session
